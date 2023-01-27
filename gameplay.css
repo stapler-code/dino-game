@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#game {
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: calc(100vh - 70%);
+    left: calc(100vw - 65%);
+}
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 150px;
+}
+.animate {
+    animation: jump 500ms;
+}
+@keyframes jump {
+    0%{top: 100px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 65%;
+    left: 94%;
+    animation: walk 1s infinite;
+}
+@keyframes walk {
+    100%{left: 1px;}
+}
+#restart {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+}
+#text {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+}
